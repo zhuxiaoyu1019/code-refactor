@@ -1,77 +1,97 @@
+/* setting for the whole screen*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* background color for the body*/
 body {
     background-color: #d9dcd6;
 }
 
+/* background color for header */
 .header {
     background-color: #2a607c;
 }
 
-.header h1 {
-    font-size: 48px;
-}
-
-.header h1 #seo {
-    color: #d9dcd6;
-}
-
-.header nav {
-    padding-top: 15px;
-}
-
-.header nav, .footer h4 {
-    font-size: 20px;
-}
-
-.header nav ul {
-    list-style-type: none;
-}
-
-.header nav ul li, .float-right {
-    margin-left: 25px;
-}
-
-.header nav, .benefits {
-    margin-right: 20px;
-}
-
-.header nav, .float-right, .benefits {
-    float: right;
-}
-
-.header nav, .benefits, .content section {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
+/* font style for both title "Horiseon" and text in the footer */
 .header, .footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* font size for title "Horiseon" */
+h1, #seo {
+    font-size: 48px;
+}
+
+/* font color and displye for subsection of "seo" in title "Horiseon" */
+#seo {
+    color: #d9dcd6;
+    display: inline;
+}
+
+/* display for everything in the header and main content */
+h1, nav ul li, .content {
+    display: inline-block;
+}
+
+/* padding setting fot navigation bar */
+nav {
+    padding-top: 15px;
+}
+
+/* font size for both navigation bar and footer heading */
+nav, h4 {
+    font-size: 20px;
+}
+
+/* remove list style for the unorder list in the navigation bar */
+nav ul {
+    list-style-type: none;
+}
+
+/* left side margin setting for all the items in the unorder list in the navigation bar and the image in "Online Reputation Management" section */
+nav ul li, .float-right {
+    margin-left: 25px;
+}
+
+/* right side margin setting for both navaigation bar and sided bar in the main content */
+nav, .benefits {
+    margin-right: 20px;
+}
+
+/* float setting for navigation bar, image in the "Online Reputation Management" section. and side bar in the main content */
+nav, .float-right, .benefits {
+    float: right;
+}
+
+/* font style for all the text in the navigation bar, side bar, and main content */
+nav, .benefits, .content section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* padding setting for both header and side bar */
 .header, .benefits{
     padding: 20px;
 }
 
+/* color for all the text in header(except for subsection "seo" in the title "Horiseon"), side bar, and main content */
 .header, a, .benefits section, .content section {
     color: #ffffff;
 }
 
-.header h1, .header nav ul li, .content {
-    display: inline-block;
-}
-
+/* remove the default underlines for the links in the navigation bar */
 a {
     text-decoration: none;
 }
 
+/* font size for all the paragraphs */
 p {
     font-size: 16px;
 }
 
+/* the adjustments for the top background image */
 .hero {
     height: 800px;
     width: 100%;
@@ -81,62 +101,75 @@ p {
     background-position: center;
 }
 
+/* float and right side margin setting for the image in the "Search Engine Optimization" and "Social Media Marketing" section */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* left side margin and width setting for the main content */
 .content {
     width: 75%;
     margin-left: 20px;
 }
 
+/* size and background color setting for the side bar */
 .benefits {
     width: 20%;
     height: 100%;
     background-color: #2589bd;
 }
 
+/* bottom margin setting for all three sections in side bar */
 .benefits section {
     margin-bottom: 32px;
 }
 
+/* bottom margin setting for all three headings in side bar */
 .benefits h3 {
     margin-bottom: 10px;
 }
 
+/* text align for headings in side bar and footer */
 .benefits h3, .footer {
     text-align: center;
 }
 
+/* display, margin, size setting for the icons in side bar */
 .benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* ensure side bar and footer are not floating to other elements */
 .benefits, .footer {
     clear: both;
 }
 
+/* settings for sections in the main content */
 .content section {
     padding: 50px;
     height: 300px;
     background-color: #0072bb;
 }
 
+/* bottom margin for both sections and headings in the main content */
 .content section, .content h2 {
     margin-bottom: 20px;
 }
 
+/* height for images in the main content */
 .content img {
     max-height: 200px;
 }
 
+/* font size for headings in main content */
 .content h2 {
     font-size: 36px;
 }
 
+/* padding setting for footer */
 .footer {
     padding: 30px;
 }
